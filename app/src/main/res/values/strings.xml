@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GUNI Food Delivery</string>
+    <string name="email_id">hms02@ganpatuniversity.ac.in</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Grains</item>
+        <item>Dairy</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Select Status</item>
+        <item>Available</item>
+        <item>Out of stock</item>
+    </string-array>
+</resources>

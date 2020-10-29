@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guni.uvpce.ceit.food.activity.EditProfileActivity">
+
+    <include
+        android:id="@+id/edit_profile_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_editor_absoluteX="8sp"
+        app:layout_editor_absoluteY="8dp"
+        android:layout_below="@id/edit_profile_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/edit_profile_pic"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/profile"/>
+
+                <EditText
+                    android:id="@+id/edit_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Profile Name"
+                    android:background="@drawable/input_search"
+                    android:padding="10sp"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/edit_profile_pic"/>
+
+                <EditText
+                    android:id="@+id/edit_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:background="@drawable/input_search"
+                    android:padding="10sp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/edit_profile_name"/>
+
+                <EditText
+                    android:id="@+id/edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:background="@drawable/input_search"
+                    android:padding="10sp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/edit_mobile"/>
+
+                <Button
+                    android:id="@+id/edit_profile_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:textSize="20sp"
+                    android:padding="10sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/edit_address"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

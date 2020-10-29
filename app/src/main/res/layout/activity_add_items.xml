@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guni.uvpce.ceit.food.activity.AddItemsActivity">
+
+    <include
+        android:id="@+id/add_item_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_item_toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_editor_absoluteX="8sp"
+            app:layout_editor_absoluteY="8dp">
+
+            <RelativeLayout
+                android:id="@+id/event_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/add_item__select_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/input_search"
+                    android:spinnerMode="dropdown" />
+
+                <ImageButton
+                    android:id="@+id/add_item_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:src="@drawable/select_image"
+                    android:layout_below="@id/add_item__select_category"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/add_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Name"
+                    android:background="@drawable/input_search"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:layout_below="@id/add_item_pic"
+                    android:layout_margin="20dp"/>
+
+                <EditText
+                    android:id="@+id/add_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Price"
+                    android:background="@drawable/input_search"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:layout_below="@id/add_item_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/add_item_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Item"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button"
+                    android:layout_below="@id/add_item_price"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

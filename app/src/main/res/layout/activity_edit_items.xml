@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditItems">
+
+    <include
+        android:id="@+id/edit_item_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_item_toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_editor_absoluteX="8sp"
+            app:layout_editor_absoluteY="8dp">
+
+            <RelativeLayout
+                android:id="@+id/edit_item_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/edit_item_select_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/input_search"
+                    android:spinnerMode="dropdown" />
+
+
+                <Spinner
+                    android:id="@+id/edit_item_select_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/edit_item_select_category"
+                    android:background="@drawable/input_search"
+                    android:spinnerMode="dropdown" />
+
+
+                <EditText
+                    android:id="@+id/edit_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Enter new price"
+                    android:textSize="20sp"
+                    android:padding="10sp"
+                    android:background="@drawable/input_search"
+                    android:layout_below="@id/edit_item_select_item" />
+
+                <Button
+                    android:id="@+id/edit_item_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Item"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/button"
+                    android:layout_below="@id/edit_item_price"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

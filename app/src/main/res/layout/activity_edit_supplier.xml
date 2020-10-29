@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSupplier">
+
+    <include
+        android:id="@+id/register_edit_supplier_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_editor_absoluteX="8sp"
+        app:layout_editor_absoluteY="8dp"
+        android:layout_below="@+id/register_edit_supplier_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/register_edit_supplier_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Supplier"
+                    android:layout_marginTop="30dp"
+                    android:textSize="40sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:id="@+id/register_edit_supplier_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/register_edit_supplier_text">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/register_edit_supplier_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update supplier"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button"
+                    android:layout_margin="15dp"
+                    android:layout_below="@id/register_edit_supplier_item_list"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

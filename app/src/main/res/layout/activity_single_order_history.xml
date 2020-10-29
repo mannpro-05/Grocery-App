@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guni.uvpce.ceit.food.activity.SingleOrderHistoryActivity">
+
+    <include
+        android:id="@+id/single_order_history_toolbar"
+        layout="@layout/appbar_layout">
+    </include>
+
+    <FrameLayout
+        android:id="@+id/main_container_ohs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/single_order_history_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_item_single_order_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>

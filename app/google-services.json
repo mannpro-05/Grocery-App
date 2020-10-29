@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "296242734254",
+    "firebase_url": "https://projectuvpce.firebaseio.com",
+    "project_id": "projectuvpce",
+    "storage_bucket": "projectuvpce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296242734254:android:fbb5a4b076af405ece793f",
+        "android_client_info": {
+          "package_name": "com.example.pojectuvpce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296242734254-gah7b0if73gf1e26772erek8mrf24ni8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNCnVofbWW3HsBMdpzxgBe7H681iQ4IVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296242734254-gah7b0if73gf1e26772erek8mrf24ni8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296242734254:android:349d7fcaf12f5304ce793f",
+        "android_client_info": {
+          "package_name": "com.guni.uvpce.ceit.food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296242734254-gah7b0if73gf1e26772erek8mrf24ni8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNCnVofbWW3HsBMdpzxgBe7H681iQ4IVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296242734254-gah7b0if73gf1e26772erek8mrf24ni8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
